@@ -1,0 +1,118 @@
+main()
+
+	Declare num loopCounter = 0
+	Declare real lowestAttendance
+	Declare real highestAttendance
+	Declare real averageAttendance
+	Declare real sumAttendance
+	Declare string days[7] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+	Declare real attendance[7]
+
+	while loopCounter <7
+		Display "Enter the attendance for" + days[loopCounter]
+		Input attendance [loopCounter]
+		loopCounter = loopCounter + 1
+	end while
+
+	while loopCounter <7
+		sumAttendance = sumAttendance + attendance
+		averageAttendance = calcAverage
+		loopCounter = loopCounter + 1
+	end while
+	
+	lowestAttendance = attendance[0]
+	highestAttendance = attendance[0]
+
+
+	while loopCounter <7
+
+		If attendance[loopCounter] > lowestAttendance
+		lowestAttendance = attendance[loopCounter]
+
+		end if
+		
+		If attendance[loopCounter] < highestAttendance
+		highestAttendance = attendance[loopCounter]
+		end if
+	
+	end while
+
+	Display "The Average Attendance is" averageAttendance
+	Display "The Lowest Attendance is" lowestAttendance
+	Display "The Highest Attendance is" highestAttendance
+
+end main()
+
+calcAverage 
+	Declare real myAverageAttendance
+	myAverageAttendance = mySumAttendance / myNumber
+	
+	return myAverageAttendance
+	reuturn calcAverage
+
+
+
+new part:
+
+main()
+
+Declare Real price = 1.00 //Everything costs $1.00 in the store
+Declare Real discountRate = .10 //This is 10% converted to a decimal 
+Declare Real discountAmount = 0.00 //You must calculate the discountAmount
+Declare Real priceAfterDiscount = 0.00 //You must calculate the priceAfterDiscount
+Display "Use the Everything Is a Dollar Discount Calculator"
+
+
+discountAmount = setDiscountAmount[price, discountRate]
+priceAfterDiscount = price - discountAmount
+Display "Price"
+Display "Discount Amount"
+Display "Price After Discount"
+
+end main()
+
+setDiscountAmount
+	myDiscountAmount = myPrice * myDiscountRate
+
+return myDiscountAmount
+end setDiscountAmount()
+
+
+
+new part:
+
+main()
+Declare String size
+Declare String type
+Declare Integer quantity
+Declare Real price
+Display "Please enter the size (S, M, L):"
+Input size
+Display "Please enter the type (S for Slice or P for Pie): "
+Input type
+Display "Please enter the quantity (1 for a pie, or 1 to 8 for slices): "
+Input quantity
+
+
+If size == "S"
+	IF type == "S"
+		price = 1.50 * quantity
+	else type == "P"
+		price = 8.00 * quantity
+end if
+
+If size == "M"
+	IF type == "S"
+		price = 1.75 * quantity
+	else type == "P"
+		price = 10.00 * quantity
+end if
+	
+If size == "L"
+	IF type == "S"
+		price = 2.00 * quantity
+	else type == "P"
+		price = 12.00 * quantity
+end if
+
+end main()
