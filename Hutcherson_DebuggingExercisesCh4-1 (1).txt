@@ -1,0 +1,73 @@
+1. Correct the pseudocode below so that when num1 is equal to num2, the message "The values are equal." will display. When num1 is NOT equal to num2, the message "The values are NOT equal" should display.
+
+Module Main()
+	Declare Interger number1
+	Declare Interger number2
+
+	number1 = 5
+	number2 = 4
+
+	call checkEquality(number1, number2)
+End Module
+
+Module checkEquality(Integer num1, Integer num2)
+	If num1 == num2 Then
+		Display "The values are equal."
+	Else
+		Display "The values are NOT equal."
+	End If
+End Module
+
+2. Correct the pseudocode below so that the value for the temp parameter will be set to 32.0 if it is not already equal to 32.0.
+
+Module resetTemperature(Real Ref temp)
+	If NOT temp == 32.0 Then
+		Set temp = 32.0
+	End If
+End Module
+
+****Corected Code*****
+Module Main()
+	Declare Real temprature = 58 
+	call resetTemprature(temprature)
+	Display temprature
+End Module
+
+Module resetTemperature(Real Ref temp)
+	If NOT (temp == 32.0) Then
+		Set temp = 32.0
+	End If
+End Module
+3. Correct the pseudocode below so that the variable called value will be validated to see if it is within the range of the variables called lower and upper. If the value is not within the range, display a message "The value is outside the range". If the value is within the range, display a message "The value is within the range".
+
+Module checkRange(Integer value, Integer lower, Integer upper)
+	If value < lower AND value > upper Then
+		Display "The value is outside the range."
+	Else
+		Display "The value is within the range."
+	End If
+End Module
+
+*****Corrected Code*****
+Module Main()
+	Declare Int vaue = 90
+	Declare Int lower = 85
+	Declare Int upper = 100
+	
+	Call checkRange(value)
+End Module
+
+Module checkRange(Integer value, Integer lower, Integer upper)
+	If value < lower AND value > upper Then
+		Display "The value is outside the range."
+	Else
+		Display "The value is within the range."
+	End If
+End Module
+
+
+desk check
+if 90 < 85 AND   90 > 100
+	False AND False		throws a False
+if 90 < 85 AND OR 90 > 100
+	False OR False		throws a False

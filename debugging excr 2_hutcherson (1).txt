@@ -1,0 +1,48 @@
+1. Correct the following pseudocode so that the program displays whatever is stored in the favoriteFood variable:
+Declare String favoriteFood
+Display "What is the name of your favorite food?"
+Input favoriteFood
+Display favorite food
+
+
+2. Correct the following pseudocode so that the program does not throw a syntax error when the program is run.
+Declare String FirstPrize
+Display "Enter the award for first prize."
+Input FirstPrize
+Display "The first prize winner will receive ", FirstPrize
+
+3. Correct the following pseudocode so that the correct average is shown.
+Declare Real lowest, highest, average
+Display "Enter the lowest score."
+Input lowest
+Display "Enter the highest score."
+Input Lowst + Highest / 2
+Set average = / 2
+Display "The average is ", average, "."
+
+4. Correct the following pseudocode so that the program will not display an error when it runs.
+Declare Integer length
+Display "Enter the length of the room."
+Input length
+
+5. Correct the following pseudocode so that the program will run correctly.
+Declare Integer value1, value2, value3, sum
+Set sum = value1 + value2 + value3
+Display "Enter the first value."
+Input value1
+Display "Enter the second value."
+Input value2
+Display "Enter the third value."
+Input value3
+Display "The sum of numbers is ", sum
+
+6. Correct the following pseudocode:
+Declare Real pi
+Set pi = 3.14159265
+Display "The value of pi is ", pi
+
+7. Correct the following pseudocode:
+Constant Real GRAVITY = 9.81
+Display "Rates of acceleration of an object in free fall:"
+Display "Earth: ", GRAVITY, " meters per second every second."
+Display "Moon: ", GRAVITY, " meters per second every second"

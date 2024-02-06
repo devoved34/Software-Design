@@ -1,0 +1,66 @@
+Chapter 6 Debugging Exercises - Due Wednesday, February 19
+
+Problem 1
+The programmer intends for this pseudocode to display three random numbers in the range of 1 through 7. According to the way we've been generating random numbers in the book; however, there appears to be an error. Assume that the random() function is a built-in library function. Correct the pseudocode so that the program works as it should (This has 1 error and is easy to spot)
+//This program displays 3 random numbers in the range from 1 to 7.
+    Declare Integer count
+    //Display 3 random numbers
+    For count = 1 to 3
+        Display random(7,1)
+    End For
+
+Answer: Display random(1,7)
+
+Problem 2
+This problem should return the amount of a discount to a main() module when the calcDiscountPrice() function is called. (This has 1 error and is pretty easy to spot.)
+//The calcDiscountPrice funciton accepts an item's price and the discount percentage as arguments. It uses those values to calculate and return the discounted price.
+Function Real calcDiscountPrice(Real price, Real percentage)
+Function Real calcDiscountPrice(Real price, Real percentage)
+    //Declarations
+    Declare Real discount
+    Declare Real discountPrice
+
+    //Calculations
+    discount = price * percentage
+    discountPrice = price - discount
+    
+    //Return the discount amount
+    Return discount
+
+Answer: It's because you are returning discount not discountPrice
+
+return discountPrice
+
+Problem 3
+This problem should calculate and display 10% of any number given. Correct the pseudocode (a bit harder than the last 2 problems)
+Module main()
+    //Declarations
+    Declare Real value, result
+    
+    //Get a value from the user
+    Display "enter a value"
+    Input value
+    
+    //Set 10% of the value
+    result = tenPercent(value)
+    
+    //Display value
+    Display "10 percent of ", value, " is ", result
+End Module
+
+//The tenPercent() function calculates and returns 10% of any number passed into it
+Function Real tenPercent(Real num)
+    //Declarations
+    Declare Integer myResult
+    
+    //Calculations
+    myResult = num * .10
+    
+    //Return the result
+    Return myResult
+
+Answer: The Returned value is not stored in the variable result. result = Call tenPercent(value)
+    
+End Function
+    
+

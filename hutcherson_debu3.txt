@@ -1,0 +1,50 @@
+1. Correct the following pseudocode:
+Module main()
+	Declare Real mileage
+	Call getMileage()
+	Display "You've driven a total of ", mileage, " miles."
+End Module
+
+Module getMileage()
+	Display "Enter your vehicle's mileage."
+	Input mileage
+End Module
+Answer: You did not declare the mileage 
+
+2. Correct the following pseudocode:
+Module main()
+	Call getCalories()
+End Module
+
+Module getCalories()
+	Declare Real calories
+	Display "How many calories are in the first food."
+	Input calories
+	
+	Declare Real calories
+	Display "How many calories are in the second food."
+	Input calories
+End Module
+Answer: Calories is duplicate which would cause an error
+
+3. Correct the following pseudocode:
+Module main()
+	Call squareNumber(5)
+End Module
+
+Module squareNumber(Integer number)
+	Set number = number^2
+	Display number
+End Module
+Answer: There doesnt need to be a reference number
+4. Correct the following pseudocode:
+Module main()
+	Call raiseToPower(2, 2.0)
+End Module
+
+Module raiseToPower(Real value, Real power)
+	Declare Real result
+	Set result = value^power
+	Display result
+End Module
+Answer: Data mismatch, cannot pass variable with different data types. 

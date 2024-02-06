@@ -1,0 +1,48 @@
+Chapter 5 Debugging Exercises
+Problem 1.
+The following pseudocode is an infinite loop. Without creating any new variables or changing the existing variable types, correct the pseudocode so that the program does not loop forever and ever...
+
+Declare Boolean finished = False
+Declare Real value, cube
+
+While NOT finished
+	Display "Enter a value to be cubed"
+	Input value
+	Set cube = value^3
+	Display value, " cubed is ", cube
+End While
+
+Problem 2.
+This program should display the numbers 1 - 5, and then display the message "Time's up!" It does not display the results correctly. Correct the pseudocode so that the program displays the results correctly.
+Declare Integer counter = 1
+Const Integer TIME_LIMIT = 5
+
+While counter <= TIME_LIMIT
+	Display counter
+	Set counter = counter + 1
+End While
+Display "Time's Up!"
+
+Problem 3.
+This program should get as input 5 sets of two numbers each, then calculate the sum of each set, and calculate the sum of all the numbers entered. It will not function as intended, however. Correct the pseudocode so that the program runs as intended. Nested loops are required.
+//This program calculates the sum of five sets of two numbers.
+Declare Integer number, sum, total
+Declare Integer sets, numbers
+
+Constant Integer MAX_SETS = 5
+Constant Integer MAX_NUMBERS = 2
+
+Set sum = 0;
+Set total = 0;
+
+For sets = 1 To MAX_NUMBERS
+	For numbers = 1 to MAX_NUMBERS
+		Display "Enter number", numbers, " of set ", sets, "."
+		Input number
+		Set sum = sum + number
+	End For
+	Display "The sum of set ", sets, " is ", sum, "."
+	Set total = total + sum
+	Set sum = 0
+End For
+Display "The total of all the sets is ", total, "."

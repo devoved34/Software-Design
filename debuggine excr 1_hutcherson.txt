@@ -1,0 +1,41 @@
+Debug 1:
+Chillya wants to calculate the sale price of a pair of shoes that is regularly $80.00 which is on sale at a 25% discount. She has written some pseudocode as follows but gets a total of 2,080.00 when her program runs. Correct the pseudocode so that Chillya's program will run correctly displaying the correct price of 60.00:
+
+regularPrice = 80.00
+discount = .25
+salePrice = (regularPrice * discount)
+
+Debug 2:
+Rayshawnda wants to calculate how much gross pay she will have when she gets a raise of 2%. She currently makes $500.00 each week. When she runs her program, she gets a total of 502.00. Correct the pseudocode so that Rayshawnda's program will run correctly displaying the correct newWeeklySalary of 510.00:
+
+oldWeeklySalary = 500.00
+raise = .02
+newWeeklySalary = OldWeeklySalary + .02 * 500
+
+Debug 3:
+Zamen started a new Blog about his favorite cars, and accordingly he tracks daily visitors. It just so happened that Zamen had 10 visitors each day for the first week (probably his supportive family and friends since the blog is new) but the program that displays the average number of visitors shows 61.42. Correct the pseudocode so that Zamen's program will run correctly displaying the correct average of 10.
+
+averageVisitors = (sunVisitors + monVisitors + tueVisitors + wedVisitors + thuVisitors + friVisitors + satVisitors)/7
+
+Debug 4:
+Ahmed wrote a program that estimates the amount of taxes that will be taken from his salary of $35,000 after the new tax bill goes into effect. In 2017, Ahmed's salary falls in the range of $9,325 to $37,950 so he currently pays 932.50 + 15% for the amount of money Ahmed makes over $9,325. For the new tax bill that you've heard about in the news that takes effect for the 2018 tax year, Ahmed's salary falls in the range of $9,525 to $38,700, and the amount of taxes will be 952.50 + 12% for the amount of money Ahmed makes over $9,525. Write a line of pseudocode below the line of pseudocode shown to reflect the 2018 tax rules and calculate how much money Ahmed will pay in taxes and display that in the comment area for 2018. 
+
+taxesWithheld = 932.50 + ((salary - 9325)*.12) //Note on a salary of 35,000, the taxes withheld are 4,783.75 in 2017
+
+Debug 5:
+Farheen wants to update Ahmed's program so that it shows the 2017 taxes and 2018 taxes and the total taxes saved. She will have 3 lines of code. Complete the 2nd and 3rd lines of code for Farheen.
+
+taxesWithheld2017 = 932.50 + ((salary - 9325)*.15) //Note on a salary of 35,000, the taxes withheld are 4,783.75 in 2017
+taxesWithheld2018 =
+taxesWithheld2018=932.50 + ((salary - 9325)*.12)
+Difference = taxesWithheld2017- taxesWithheld2018
+
+
+
+
+
+
+
+
+
+
